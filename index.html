@@ -2,25 +2,217 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Cái Tắc Eco Connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cái Tắc Eco Connect - Du Lịch Trải Nghiệm Sinh Thái</title>
     <style>
-        body { font-family: Arial; background-color: #e0f7e0; text-align: center; }
-        .header { background-color: #4CAF50; color: white; padding: 20px; }
-        .tour-button { background-color: #008CBA; color: white; padding: 10px; margin: 10px; text-decoration: none; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .product {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #blog-entries {
+            margin-top: 20px;
+        }
+        .blog-entry {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Cái Tắc Eco Connect</h1>
-        <p>Dự án du lịch trải nghiệm sinh thái - văn hóa kết hợp nền tảng thông minh</p>
+
+<header>
+    <h1>Cái Tắc Eco Connect</h1>
+    <p>Dự án du lịch trải nghiệm sinh thái - văn hóa kết hợp nền tảng thông minh tại Cái Tắc, Cần Thơ</p>
+</header>
+
+<nav>
+    <a href="#home">Trang Chủ</a>
+    <a href="#gallery">Vẻ Đẹp Cái Tắc</a>
+    <a href="#tours">Tour Trải Nghiệm</a>
+    <a href="#products">Đặc Sản</a>
+    <a href="#map">Bản Đồ</a>
+    <a href="#blog">Blog Phản Hồi</a>
+    <a href="#contact">Liên Hệ</a>
+</nav>
+
+<section id="home">
+    <h2>Chào Mừng Đến Với Cái Tắc Eco Connect</h2>
+    <p>Xây dựng mô hình du lịch trải nghiệm sinh thái – văn hóa tại Cái Tắc kết hợp nền tảng số thông minh nhằm kết nối du khách với người dân và sản phẩm địa phương một cách bền vững.</p>
+    <p>Giá trị cốt lõi: Phát triển du lịch xanh, giáo dục trải nghiệm và chuyển đổi số cộng đồng.</p>
+</section>
+
+<section id="gallery">
+    <h2>Chiêm Ngưỡng Vẻ Đẹp Cái Tắc</h2>
+    <p>Khám phá vẻ đẹp thiên nhiên và văn hóa của thị trấn Cái Tắc qua những hình ảnh chân thực.</p>
+    <div class="gallery">
+        <!-- Thay bằng link ảnh thực tế của bạn, hoặc dùng placeholder -->
+        <img src="https://via.placeholder.com/300?text=Vườn+Cây+Cái+Tắc" alt="Vườn cây miệt vườn">
+        <img src="https://via.placeholder.com/300?text=Chợ+Quê" alt="Chợ quê Cái Tắc">
+        <img src="https://via.placeholder.com/300?text=Sông+Nước+Miền+Tây" alt="Sông nước miền Tây">
+        <img src="https://via.placeholder.com/300?text=Trò+Chơi+Dân+Gian" alt="Trò chơi dân gian">
     </div>
-    <h2>Đặt Tour Ngay!</h2>
-    <a href="#tour" class="tour-button">Tour Làm Nông Dân (150.000đ)</a>
-    <a href="#shop" class="tour-button">Mua Đặc Sản</a>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.1234!2d105.123456!3d9.876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOUIgQ2FpIFRhYw!5e0!3m2!1svi!2svn!4v1234567890" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <!-- Bản đồ embed -->
-    <p>Quét QR để biết thêm về chợ quê: <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com/choque&size=100x100" alt="QR Code"></p>
-    <script>
-        alert("Chào mừng đến với Cái Tắc Eco Connect!"); // Popup chào mừng đơn giản
-    </script>
+</section>
+
+<section id="tours">
+    <h2>Tour Trải Nghiệm</h2>
+    <p>Tham gia các tour như làm nông dân miệt vườn, tham quan chợ quê, làm bánh truyền thống và trò chơi dân gian.</p>
+    <ul>
+        <li>Tour 1: Một Ngày Làm Nông Dân - 150.000đ/người</li>
+        <li>Tour 2: Làm Bánh Truyền Thống - 200.000đ/người</li>
+        <li>Tour 3: Khám Phá Chợ Quê - 180.000đ/người</li>
+    </ul>
+    <button onclick="alert('Đặt tour thành công! Chúng tôi sẽ liên hệ qua email.')">Đặt Tour Ngay</button>
+</section>
+
+<section id="products">
+    <h2>Đặc Sản Và Quà Lưu Niệm</h2>
+    <p>Xem và mua đặc sản địa phương thân thiện với môi trường.</p>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Bánh+Tét" alt="Bánh Tét">
+        <p>Bánh Tét - 50.000đ</p>
+        <button onclick="alert('Thêm vào giỏ hàng!')">Mua Ngay</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Trái+Cây+Tươi" alt="Trái Cây Tươi">
+        <p>Trái Cây Tươi - 30.000đ/kg</p>
+        <button onclick="alert('Thêm vào giỏ hàng!')">Mua Ngay</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Quà+Lưu+Niệm" alt="Quà Lưu Niệm">
+        <p>Quà Lưu Niệm - 100.000đ</p>
+        <button onclick="alert('Thêm vào giỏ hàng!')">Mua Ngay</button>
+    </div>
+</section>
+
+<section id="map">
+    <h2>Bản Đồ Số Cái Tắc</h2>
+    <p>Tra cứu các điểm tham quan với QR code thuyết minh.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.1234!2d105.123456!3d9.876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOUIgQ2FpIFRhYw!5e0!3m2!1svi!2svn!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>Quét QR để biết thêm: <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com/info&size=100x100" alt="QR Code"></p>
+</section>
+
+<section id="blog">
+    <h2>Blog Phản Hồi Từ Du Khách</h2>
+    <p>Chia sẻ trải nghiệm của bạn về Cái Tắc!</p>
+    <form id="blog-form">
+        <input type="text" id="name" placeholder="Tên của bạn" required>
+        <textarea id="feedback" placeholder="Phản hồi hoặc câu chuyện của bạn" required></textarea>
+        <button type="button" onclick="submitFeedback()">Gửi Phản Hồi</button>
+    </form>
+    <div id="blog-entries"></div>
+</section>
+
+<section id="contact">
+    <h2>Liên Hệ</h2>
+    <p>Trưởng nhóm: Tô Kim Yến - Lớp 8A11, Trường THCS Cái Tắc</p>
+    <p>Thành viên: Nguyễn Thanh Gia Cường</p>
+    <p>Hướng dẫn: Cô Nguyễn Thị Bích Ngọc</p>
+    <p>Email: [email của bạn] | SĐT: [số điện thoại]</p>
+</section>
+
+<footer>
+    &copy; 2026 Cái Tắc Eco Connect. All rights reserved.
+</footer>
+
+<script>
+    function submitFeedback() {
+        const name = document.getElementById('name').value;
+        const feedback = document.getElementById('feedback').value;
+        if (name && feedback) {
+            const entry = document.createElement('div');
+            entry.classList.add('blog-entry');
+            entry.innerHTML = `<strong>${name}:</strong> <p>${feedback}</p>`;
+            document.getElementById('blog-entries').appendChild(entry);
+            document.getElementById('blog-form').reset();
+            alert('Cảm ơn phản hồi của bạn!');
+        } else {
+            alert('Vui lòng điền đầy đủ thông tin!');
+        }
+    }
+</script>
+
 </body>
 </html>
